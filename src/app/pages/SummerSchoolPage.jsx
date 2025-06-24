@@ -6,9 +6,9 @@ const SummerSchoolPage = () => {
     <div className="bg-linear-to-r from-cyan-200 via-blue-400 to-indigo-600 flex-1 p-8 bg-gray-50 font-inter">
       <h2 className="flex justify-center text-4xl font-extrabold text-gray-800 mb-6">Summer School Class Tracker</h2>
 
-      <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
+      <div className="bg-blue-100 p-6 rounded-lg shadow-md border border-gray-200 overflow-x-auto">
+        <table className="bg-blue-100 min-w-full divide-y divide-gray-200">
+          <thead className="bg-blue-200">
             <tr>
               <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Date
