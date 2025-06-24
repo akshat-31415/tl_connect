@@ -18,9 +18,8 @@ const App = () => {
   const [userRole, setUserRole] = useState(null);
   const [currentPage, setCurrentPage] = useState('login'); // Default to login page
 
-  // Effect to load user role from storage (e.g., localStorage in a real app, or context)
+  // Effect to load user role from storage 
   useEffect(() => {
-    // In a real Next.js app, you might use a context provider or more sophisticated auth
     const storedRole = localStorage.getItem('userRole');
     if (storedRole) {
       setUserRole(storedRole);
