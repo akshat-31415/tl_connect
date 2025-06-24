@@ -13,7 +13,7 @@ const LoginPage = ({ onLogin }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 font-inter">
+    <div className="bg-linear-to-r from-cyan-200 via-blue-400 to-indigo-600 min-h-screen flex items-center justify-center bg-gray-100 p-4 font-inter">
       <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
         <h2 className="text-3xl font-bold text-center text-indigo-700 mb-6">TL Connect Login</h2>
         <div className="mb-6">

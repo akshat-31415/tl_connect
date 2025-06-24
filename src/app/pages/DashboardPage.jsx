@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 const DashboardPage = ({ userRole }) => {
   return (
     <div className="flex-1 p-8 bg-gray-50 font-inter">
-      <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Dashboard</h2>
-      <p className="text-lg text-gray-700 mb-8">Welcome, <span className="font-semibold text-indigo-600">{userRole}</span>! Here's a summary of your activities:</p>
+      <h2 className="flex justify-center text-4xl font-extrabold text-gray-800 mb-6">Dashboard</h2>
+      <p className="flex justify-center text-lg text-gray-700 mb-8">Welcome, <span className="font-semibold text-indigo-600">{userRole}</span>! Here's a summary of your activities:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Widget 1: Upcoming Workshops */}
