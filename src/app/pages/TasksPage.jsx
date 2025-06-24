@@ -72,12 +72,12 @@ const TasksPage = ({ userRole }) => { // userRole is passed to filter tasks if n
   }, {});
 
   return (
-    <div className="flex-1 p-8 bg-gray-50 font-inter">
+    <div className="bg-linear-to-r from-cyan-200 via-blue-400 to-indigo-600 flex-1 p-8 bg-gray-50 font-inter">
       <h2 className="flex justify-center text-4xl font-extrabold text-gray-800 mb-6">Tasks</h2>
 
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 space-y-4 md:space-y-0 md:space-x-4">
         {/* Domain Filter */}
-        <div className="flex justify-center items-center w-full md:w-auto flex-1">
+        <div className="bg-white flex justify-center items-center w-full md:w-auto flex-1">
           <label htmlFor="task-domain-select" className="sr-only">Filter by Domain</label>
           <select
             id="task-domain-select"
@@ -94,7 +94,7 @@ const TasksPage = ({ userRole }) => { // userRole is passed to filter tasks if n
         </div>
 
         {/* Status Filter */}
-        <div className="w-full md:w-auto flex-1">
+        <div className="bg-white w-full md:w-auto flex-1">
           <label htmlFor="task-status-select" className="sr-only">Filter by Status</label>
           <select
             id="task-status-select"

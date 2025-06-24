@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import allWorkshops from '../data/WorkshopsData';
 
 const WorkshopCard = ({ workshop }) => {
   const isUpcoming = new Date(workshop.date) >= new Date();
@@ -22,15 +23,6 @@ const WorkshopCard = ({ workshop }) => {
 
 // Workshops Page
 const WorkshopsPage = () => {
-  // Dummy data for workshops
-  const allWorkshops = [
-    { id: 1, title: 'Introduction to AI', domain: 'Machine Learning', date: '2025-07-15' },
-    { id: 2, title: 'Web Dev Fundamentals', domain: 'Software Development', date: '2025-08-01' },
-    { id: 3, title: 'Robotics Basics', domain: 'Robotics', date: '2025-06-01' }, // Past workshop
-    { id: 4, title: 'Data Science with Python', domain: 'Machine Learning', date: '2025-09-10' },
-    { id: 5, title: 'Advanced Machine Learning', domain: 'Machine Learning', date: '2025-05-20' }, // Past workshop
-    { id: 6, title: 'Mobile App Development', domain: 'Software Development', date: '2025-07-25' },
-  ];
 
   const [filterType, setFilterType] = useState('all'); // 'all', 'upcoming', 'past'
   const [filterDomain, setFilterDomain] = useState('all'); // 'all' or specific domain
@@ -54,7 +46,7 @@ const WorkshopsPage = () => {
   }).sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort by date
 
   return (
-    <div className="flex flex-col justify-center items-center flex-1 p-8 bg-gray-50 font-inter">
+    <div className="bg-linear-to-r from-cyan-200 via-blue-400 to-indigo-600 flex flex-col justify-center items-center flex-1 p-8 bg-gray-50 font-inter">
       <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Workshops</h2>
 
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 space-y-4 md:space-y-0 md:space-x-4">

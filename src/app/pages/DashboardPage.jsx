@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const DashboardPage = ({ userRole }) => {
   return (
-    <div className="flex-1 p-8 bg-gray-50 font-inter">
+    <div className="bg-linear-to-r from-cyan-200 via-blue-400 to-indigo-600 flex-1 p-8 bg-gray-50 font-inter">
       <h2 className="flex justify-center text-4xl font-extrabold text-gray-800 mb-6">Dashboard</h2>
       <p className="flex justify-center text-lg text-gray-700 mb-8">Welcome, <span className="font-semibold text-indigo-600">{userRole}</span>! Here's a summary of your activities:</p>
 

@@ -67,7 +67,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="bg-linear-to-r from-cyan-200 via-blue-400 to-indigo-600 min-h-screen flex flex-col bg-gray-100">
       <style>
         {`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');

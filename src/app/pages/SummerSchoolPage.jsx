@@ -3,7 +3,7 @@ import lectures from '../data/SummerSchoolData';
 
 const SummerSchoolPage = () => {
   return (
-    <div className="flex-1 p-8 bg-gray-50 font-inter">
+    <div className="bg-linear-to-r from-cyan-200 via-blue-400 to-indigo-600 flex-1 p-8 bg-gray-50 font-inter">
       <h2 className="flex justify-center text-4xl font-extrabold text-gray-800 mb-6">Summer School Class Tracker</h2>
 
       <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 overflow-x-auto">
