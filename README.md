@@ -49,7 +49,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone akshat-31415/tl_connect
     cd tl-connect-frontend
     ```
 
